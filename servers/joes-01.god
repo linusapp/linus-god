@@ -18,7 +18,7 @@ God.watch do |w|
   w.dir = site_root
   w.log = logs[:linus_web]
   w.pid_file = pids[:linus_web]
-  w.start = "bundle exec rails server -d -p 3000"
+  w.start = "bundle exec rails server -d -p 3001"
   w.stop = "kill $(cat #{pids[:linus_web]})"
   w.behavior(:clean_pid_file)
 
